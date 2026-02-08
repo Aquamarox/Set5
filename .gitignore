@@ -1,0 +1,38 @@
+# Сборка CMake
+cmake-build-*/
+build/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Бинарные файлы
+*.o
+*.a
+*.so
+*.exe
+*.out
+
+# IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ОС
+.DS_Store
+Thumbs.db
+
+# Игнорировать ВСЕ CSV/PNG, КРОМЕ наших файлов
+*.csv
+!run_p12.csv
+!summary_p12.csv
+!run_p14.csv
+!summary_p14.csv
+!run_p12_packed.csv
+!summary_p12_packed.csv
+
+*.png
+!report/**
